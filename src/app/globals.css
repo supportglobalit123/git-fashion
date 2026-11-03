@@ -1,0 +1,127 @@
+:root {
+  /* PRIMARY BRAND COLOR - GREEN from GITS Fashion Logo */
+  --primary-color: #2E7D32;      /* Primary GREEN - from logo */
+  --primary-hover: #1B5E20;      /* Darker green for hover states */
+  --primary-light: #E8F5E9;      /* Light green tint for backgrounds */
+  --primary-rgb: 46, 125, 50;    /* RGB value for rgba usage */
+  
+  /* Secondary Brand Color */
+  --secondary-color: #C2185B;    /* Fashion Pink - accent color */
+  --secondary-hover: #AD1457;    /* Darker pink for hover states */
+  
+  /* Neutral Colors */
+  --background: #FFFFFF;
+  --surface: #F8F9FA;
+  --border: #E0E0E0;
+  --text-primary: #212121;
+  --text-secondary: #757575;
+  --text-muted: #9E9E9E;
+  
+  /* Semantic Colors (use green for success) */
+  --success: #2E7D32;
+  --success-light: #E8F5E9;
+  --warning: #FF9800;
+  --error: #F44336;
+  --info: #2196F3;
+  
+  /* Additional UI Support Colors */
+  --overlay: rgba(0, 0, 0, 0.6);
+  --shadow-light: rgba(0, 0, 0, 0.08);
+  --shadow-medium: rgba(0, 0, 0, 0.16);
+  --shadow-heavy: rgba(0, 0, 0, 0.24);
+}
+
+/* Dark Mode Theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark Mode Primary Colors */
+    --primary-color: #4CAF50;      /* Lighter green for dark mode */
+    --primary-hover: #66BB6A;      /* Light green hover for dark mode */
+    --primary-light: rgba(76, 175, 80, 0.2);
+    
+    /* Dark Mode Secondary */
+    --secondary-color: #E91E63;
+    --secondary-hover: #FF4081;
+    
+    /* Dark Mode Neutrals */
+    --background: #0A0A0A;
+    --surface: #1A1A1A;
+    --border: #2D2D2D;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B0B0B0;
+    --text-muted: #808080;
+    
+    /* Dark Mode Semantic Colors */
+    --success: #4CAF50;
+    --warning: #FF9800;
+    --error: #F44336;
+    --info: #2196F3;
+    
+    /* Dark Mode Support Colors */
+    --overlay: rgba(255, 255, 255, 0.1);
+    --shadow-light: rgba(0, 0, 0, 0.3);
+    --shadow-medium: rgba(0, 0, 0, 0.5);
+    --shadow-heavy: rgba(0, 0, 0, 0.7);
+  }
+}
+
+/* ===== PRIMARY GREEN BUTTON STYLES ===== */
+.btn-primary,
+.rts-btn.btn-primary,
+button.btn-primary,
+a.rts-btn.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.btn-primary:hover,
+.rts-btn.btn-primary:hover,
+button.btn-primary:hover,
+a.rts-btn.btn-primary:hover {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+  color: white !important;
+}
+
+/* Primary colored text links */
+a.text-primary,
+.text-primary,
+.text-green {
+  color: var(--primary-color) !important;
+}
+
+/* Primary colored borders */
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
+
+/* Primary colored backgrounds */
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-primary-light {
+  background-color: var(--primary-light) !important;
+}
+
+/* Primary colored icons and SVGs */
+.icon-primary,
+svg.primary-icon {
+  fill: var(--primary-color) !important;
+  stroke: var(--primary-color) !important;
+}
+
+/* Primary colored buttons with outline */
+.btn-outline-primary,
+.rts-btn.btn-outline-primary {
+  background-color: transparent !important;
+  border: 2px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.btn-outline-primary:hover,
+.rts-btn.btn-outline-primary:hover {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
